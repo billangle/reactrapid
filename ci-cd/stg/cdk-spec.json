@@ -1,0 +1,18 @@
+{
+    "settings":{
+        "topdir": "frontend",
+        "environment": "stg",
+        "region": "us-east-1",
+        "account": "796973487247",
+        "node_version": "NODEJS_16_X",
+        "role": "arn:aws:iam::796973487247:role/LambdaS3",
+        "domain": "stg.reirapid.net",
+        "api_name": "RAPID CC",
+        "api_dns":  "",
+        "description": "RAPID API",
+        "cert_arn": "arn:aws:acm:us-west-1:962183462142:certificate/50f62999-00e0-46f4-919b-e59977f5be78",
+        "rest_api_id": "xunzh8wfd1",
+        "root_resource_id": "o41n3d3lnk",
+        "user_pool_arn": "arn:aws:cognito-idp:us-east-2:796973487247:userpool/us-east-2_9m58Y8l6L"
+    }
+}

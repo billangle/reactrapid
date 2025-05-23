@@ -1,0 +1,9 @@
+@use '@pets/styles' as *;
+
+.container {
+  background-color: $pure-white;
+  color: $pure-white;
+  padding: 3.4rem 6.5rem;
+  line-height: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+}

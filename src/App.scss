@@ -1,0 +1,229 @@
+@import '@trussworks/react-uswds/lib/uswds.css';
+@import '@trussworks/react-uswds/lib/index.css';
+
+@import './styles/base/base';
+@import './styles/base/fonts';
+@import './styles/helpers/colors';
+
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+@import '@fontsource/roboto/900.css';
+
+@import '@fontsource/titillium-web/300.css';
+@import '@fontsource/titillium-web/400.css';
+@import '@fontsource/titillium-web/600.css';
+@import '@fontsource/titillium-web/700.css';
+@import '@fontsource/titillium-web/900.css';
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+body {
+  font-family: sans-serif;
+  color: $deep-indigo;
+}
+
+button {
+  outline: none !important;
+}
+
+h1 {
+  font-size: 2.125rem;
+  font-weight: 700;
+  font-family: 'Titillium Web';
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Titillium Web';
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'Titillium Web';
+}
+
+a,
+a:visited,
+a:focus {
+  color: $primary-blue;
+  outline: none !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Internet Explorer */
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+input,
+select,
+option {
+  outline: none !important;
+  padding: 0 0.5rem;
+  height: 2.5rem;
+}
+
+.usa-radio__input:checked + [class*='__label']::before {
+  background-color: $primary-blue;
+  box-shadow: 0 0 0 2px $primary-blue;
+}
+
+.usa-radio__input:checked + [class*='__label']::before {
+  box-shadow: 0 0 0 2px $primary-blue, inset 0 0 0 2px #fff;
+}
+
+.usa-checkbox__input:checked + [class*='__label']::before {
+  background-color: $primary-blue;
+  box-shadow: 0 0 0 2px $primary-blue;
+}
+
+div [data-testid='checkbox'],
+div [class='usa-checkbox'] {
+  min-height: 2rem;
+}
+
+.firm-name-header {
+  background-color: $frost-blue;
+  height: 3rem;
+  font-family: 'Titillium Web';
+  line-height: 3rem;
+  width: 100%;
+  & > div {
+    width: 70%;
+    margin: auto;
+  }
+}
+.usa-button:not(.usa-button--outline):not(.usa-button--unstyled) {
+  background-color: $primary-blue;
+}
+.usa-button:disabled {
+  background-color: $grey-disabled !important;
+  color: $grey-label !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+.usa-button--outline {
+  color: $primary-blue;
+}
+.required-mark {
+  color: $crimson;
+  margin-left: 0.3rem;
+}
+
+.divider {
+  position: absolute;
+  width: 0.625rem;
+  background-color: transparent;
+  height: 110%;
+  top: 0;
+  &.has-error {
+    background-color: $crimson;
+  }
+}
+
+.usa-alert--info .usa-alert__body {
+  background-color: $poweder-blue !important;
+}
+
+.usa-alert__body {
+  margin-left: 0rem !important;
+}
+
+.accordion-container .usa-accordion__heading {
+  width: 100%;
+}
+
+.usa-modal {
+  width: 37.5rem;
+  border-radius: 0;
+  max-width: inherit;
+}
+
+.usa-modal__close {
+  display: none;
+}
+
+.usa-modal__content {
+  padding: 0;
+  border-radius: 0;
+  .font-family-titillium {
+    font-family: 'Titillium Web';
+  }
+}
+
+.usa-card {
+  list-style: none;
+}
+
+.usa-modal__main {
+  width: 100%;
+}
+
+input[type='radio'] {
+  width: 1.3rem;
+  aspect-ratio: 1;
+  accent-color: $primary-blue;
+}
+
+:root {
+  --toastify-color-info: #e5f0ff;
+  --toastify-color-success: #f0ffef;
+  --toastify-color-warning: #faf3d1;
+  --toastify-color-error: #f4e3db;
+}
+
+.Toastify__toast--success {
+  border-left: 5px solid #067919;
+  .Toastify__toast-icon {
+    color: #067919;
+  }
+}
+.Toastify__toast--warning {
+  border-left: 5px solid #c0a100;
+  .Toastify__toast-icon {
+    color: #c0a100;
+  }
+}
+.Toastify__toast--info {
+  border-left: 5px solid #0b3d91;
+  .Toastify__toast-icon {
+    color: #0b3d91;
+  }
+}
+.Toastify__toast--error {
+  border-left: 5px solid #d13621;
+  .Toastify__toast-icon {
+    color: #d13621;
+  }
+}
+
+.Toastify__toast-body {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: $smoky-gray;
+}
+
+input[type='checkbox'] {
+  accent-color: $primary-blue;
+}
+
+abbr[title] {
+  text-decoration: none;
+  font-size: inherit;
+}

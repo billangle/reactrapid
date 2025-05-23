@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  &.logged-in {
+    float: left;
+    margin: 0;
+    margin-right: 3rem;
+    width: fit-content;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+  }
+  .action {
+    a {
+      font-size: 1.125rem;
+      margin-right: 1.563rem;
+    }
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+}

@@ -1,0 +1,37 @@
+@use '@pets/styles' as *;
+
+.container {
+  display: flex;
+  border: 1px solid $silver;
+  padding: 2rem;
+  gap: 1.4rem;
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.noBorder {
+  border: none;
+  padding-top: 0;
+}
+
+.wrapper {
+  position: relative;
+
+  .divider {
+    position: absolute;
+    width: 0.25rem;
+    background-color: $primary-blue;
+    height: 110%;
+    left: -1rem;
+    top: 0;
+    &.error {
+      background-color: $crimson;
+    }
+  }
+}
+
+.required {
+  color: $crimson;
+}

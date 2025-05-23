@@ -1,0 +1,38 @@
+@use '@pets/styles' as *;
+
+.form-control {
+  @include form-control;
+  &.flex {
+    display: flex;
+  }
+  margin-bottom: 0.125rem;
+  padding: 1rem 0;
+  width: 17.5rem;
+
+  .label-container {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.has-error {
+  padding-left: 1rem;
+}
+
+.error {
+  border: 0.1875rem solid $crimson;
+}
+
+.required {
+  display: inline-block;
+  color: $crimson;
+  margin-left: 0.2rem;
+}
+
+.divider {
+  position: absolute;
+  width: 0.25rem;
+  background-color: $crimson;
+  height: 100%;
+  left: 0;
+  top: 0;
+}

@@ -1,0 +1,13 @@
+@import "../../styles/helpers/colors";
+
+.reset, .reset-banner {
+    color: $primary-blue;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.reset-banner {
+    font-size: inherit;
+}

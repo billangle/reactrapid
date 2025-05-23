@@ -1,0 +1,36 @@
+@use '@pets/styles' as *;
+
+.radio-container {
+  position: relative;
+  width: fit-content;
+  padding: 1.25rem 9.375rem 1.625rem 1.875rem;
+  margin-top: 32px;
+  border: 1px solid $grey-border;
+}
+
+.radio-container.has-error {
+  border: 1px solid $crimson;
+}
+
+.error {
+  color: $crimson;
+  font-weight: bold;
+  position: absolute;
+  top: -24px;
+  left: 5px;
+}
+
+.divider {
+  position: absolute;
+  width: 4px;
+  height: inherit;
+  background-color: $crimson;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.required {
+  display: inline-block;
+  color: $crimson;
+}

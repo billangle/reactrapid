@@ -1,0 +1,124 @@
+@import '../../../styles/helpers/mixins';
+@import '../../../styles/helpers/colors';
+
+.card {
+  @include card-with-box-shadow;
+  color: $slate-grey;
+
+  .ids {
+    display: flex;
+    flex-direction: column;
+    * {
+      margin: 0;
+    }
+
+    .last-name {
+      display: flex;
+      gap: 2rem;
+    }
+  }
+
+  h2 {
+    color: $navy-smoke;
+  }
+
+  h3 {
+    margin-bottom: 0.3rem;
+
+    &.pass-requirements {
+      font-size: 1.125rem;
+      color: $smoky-gray;
+    }
+  }
+
+  ul.pass-req-item {
+    list-style: none;
+    padding-left: 0.7rem;
+    font-size: 0.875rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .optional {
+    border: 1px solid $silver;
+    width: 70%;
+
+    .ids {
+      padding-left: 1rem;
+      gap: 2rem;
+    }
+  }
+
+  .row {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+  }
+}
+
+.action-btns {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 4rem;
+
+  & .next:not([disabled]) {
+    @include button-primary;
+    width: auto;
+
+    &:hover {
+      background-color: $midnight-blue-hover;
+    }
+  }
+
+  & .next:disabled {
+    @include button;
+    width: auto;
+    pointer-events: none;
+    background-color: $silver;
+  }
+
+  & .cancel {
+    @include button;
+    color: $crimson;
+    margin-right: 2rem;
+    background-color: $pure-white !important;
+    border: 0.1875rem solid $crimson;
+  }
+}
+.helperText {
+  font-size: 1.125rem;
+  color: $grey;
+}
+
+button.is-saving {
+  pointer-events: none;
+  background-color: $pure-white !important;
+  color: $silver !important;
+  border: 0.1875rem solid $silver;
+  font-style: italic;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 8px 20px !important;
+  & > span {
+    width: 1.3rem;
+    height: 1.3rem;
+    border: 3.7px dotted $silver;
+    border-radius: 100%;
+    animation: spin 1.4s infinite linear;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

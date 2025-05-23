@@ -1,0 +1,80 @@
+@use '@pets/styles' as *;
+
+.form-control {
+  @include form-control;
+  &.flex {
+    display: flex;
+  }
+  padding: 1rem 0;
+  padding-left: 1.875rem;
+
+  .label-container {
+    margin-bottom: 0.3rem;
+    label {
+      font-weight: bold;
+    }
+  }
+}
+
+.form-control.usage-2 {
+  padding-left: 0;
+}
+
+.error {
+  border: 0.1875rem solid $crimson;
+}
+
+.divider {
+  position: absolute;
+  width: 0.625rem;
+  height: inherit;
+  background-color: $primary-blue;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.divider.has-error {
+  background-color: $crimson;
+}
+
+.required {
+  display: inline-block;
+  color: $crimson;
+}
+
+.textarea {
+  resize: none;
+}
+
+.icon-input {
+  display: flex;
+  align-items: center;
+  &:not(.error) {
+    border: 0.0625rem solid;
+  }
+  width: fit-content;
+  input {
+    border: none;
+    outline: none;
+  }
+}
+
+.limit {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.875rem;
+  font-size: 0.875rem;
+  font-style: italic;
+  color: $light-slate-grey;
+}
+
+.limit4Usage {
+  display: flex;
+  justify-content: end;
+  margin-top: 0.875rem;
+  font-size: 0.875rem;
+  text-align: right;
+  font-style: italic;
+  color: $light-slate-grey;
+}

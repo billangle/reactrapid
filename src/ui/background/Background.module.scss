@@ -1,0 +1,16 @@
+@import "../../styles/helpers/colors";
+
+.pink-background {
+  background-color: $champagne;
+}
+.blue-background {
+  background-color: $frost-blue;
+}
+
+.white-isotope {
+  object-fit: cover;
+}
+.black-isotope {
+  background-size: cover;
+  object-fit: cover;
+}

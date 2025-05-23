@@ -1,0 +1,64 @@
+@use '@pets/colors' as *;
+
+.usa-alert__text {
+  align-items: center;
+  display: flex;
+}
+
+.alert {
+  font-family: 'Roboto', sans-serif;
+  color: $smoky-gray;
+  font-size: 1.12rem;
+  border-left-color: $harvest-gold;
+  box-shadow: 1px 1px 5px 0px $poweder-blue;
+  svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.info {
+  border-left-color: $primary-blue;
+  background-color: $poweder-blue;
+  box-shadow: 1px 1px 5px 0px $poweder-blue;
+
+  svg {
+    color: $primary-blue;
+  }
+}
+
+.warning {
+  background-color: $pale-yellow;
+  border-left-color: $harvest-gold;
+
+  svg {
+    color: $harvest-gold;
+  }
+}
+
+.error {
+  background-color: $alert-error;
+  border-left-color: $crimson;
+
+  svg {
+    color: $crimson;
+  }
+}
+
+.success {
+  background-color: $pearl-mist;
+  border-left-color: $forest-green;
+
+  svg {
+    color: $forest-green;
+  }
+}
+
+.flexAlert {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  svg {
+    margin-right: 20px;
+    font-size: 32px;
+  }
+}

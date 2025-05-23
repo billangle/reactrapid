@@ -1,0 +1,40 @@
+@use '@pets/styles' as *;
+
+.button {
+  @include button;
+  border-radius: 3px;
+  font-weight: 700;
+  min-width: fit-content;
+  padding-inline: 3rem;
+  display: flex;
+  flex-direction: row;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.back {
+  border: 0.1rem solid $dark-slate;
+  color: $dark-slate;
+  background-color: $sky-mist;
+}
+
+.submit {
+  color: $pure-white;
+  background-color: $primary-blue;
+  padding-inline: 7rem;
+}
+
+.cancel {
+  color: $crimson;
+  background-color: $pure-white;
+  border: 0.1875rem solid $crimson;
+}
+
+.save {
+  color: $primary-blue;
+  background-color: $pure-white;
+  border: 0.1875rem solid $primary-blue;
+}

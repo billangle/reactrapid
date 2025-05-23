@@ -1,0 +1,35 @@
+export enum EVAL_ROUTE_PATH {
+  DASHBOARD = 'dashboard',
+  SIGN_NDA = 'sign-nda',
+  SIGN_SELF_CERTIFICATION = 'sign-self-certification',
+  ABSTRACTS = 'abstracts',
+  ABSTRACTS_GENERIC = 'abstracts-generic',
+  RESPONSIVE_REVIEW_LISTING = 'responsiveness-review-listing',
+  SCREEN_LISTING = 'screen-listing',
+  SCREEN_LISTING_GENERIC = 'screen-listing-generic',
+  SCREEN_PROPOSAL = 'screen-proposal',
+  SCREEN_PROPOSAL_GENERIC = 'screen-proposal-generic',
+  SCREEN_PROPOSAL_REVIEW = 'screen-proposal-review',
+  SCREEN_PROPOSAL_REVIEW_GENERIC = 'screen-proposal-review-generic',
+  REC_CHART = 'rec-chart',
+  ASSIGN_REVIEWER_MAINLINE = 'assign-reviewers-mainline',
+  ASSIGN_REVIEWER_GENERIC = 'assign-reviewers-generic',
+  QUALITY_CHECK_LISTING = 'quality-check-listing',
+  QUALITY_CHECK_LISTING_GENERIC = 'quality-check-listing-generic',
+  QUALITY_CHECK_GENERIC = 'quality-check-generic',
+  RANK_RECOMMEND = 'rank-recommend',
+  RANK_TYPE_SELECTION_GENERIC = 'rank-type-selection-generic',
+  RANK_LISTING_GENERIC = 'rank-listing-generic',
+  RANK_FORM_GENERIC = 'rank-form-generic',
+  TECHNICAL_REVIEW_QUALITY_CHECK = 'technical-review-quality-check',
+  TECHNICAL_REVIEW = 'technical-review',
+  COMMERCIAL_REVIEW = 'commercial-review',
+  INTEGRATED_COMMERCIAL_REVIEW = 'integrated-commercial-review',
+  THIRDPARTY_REVIEW = 'thirdparty-review',
+}
+
+
+export enum REPORT_ROUTE_PATH {
+  DASHBOARD = 'dashboard',
+  RESPONSIVE_REVIEW_LISTING = 'responsiveness-review-listing',
+}

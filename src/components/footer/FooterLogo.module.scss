@@ -1,0 +1,23 @@
+@use '@pets/colors' as *;
+
+.container {
+  display: flex;
+  background-color: $charcoal;
+  color: $frost-blue;
+  align-items: center;
+  padding: 2rem 1rem;
+  font-family: 'Roboto', sans-serif;
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+.linkondarkbackground {
+  color: $link-on-dark-background !important;
+  &:visited {
+    color: $link-on-dark-background-visited;
+  }
+}

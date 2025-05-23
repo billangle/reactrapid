@@ -1,0 +1,6 @@
+@use '@pets/styles' as *;
+
+.wrapper {
+  border-left: 0.5rem solid $primary-blue;
+  padding: 0.3rem 2rem;
+}

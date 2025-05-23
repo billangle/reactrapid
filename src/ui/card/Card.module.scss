@@ -1,0 +1,8 @@
+@use '@pets/styles' as *;
+
+.card {
+  @include card-with-box-shadow;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+}

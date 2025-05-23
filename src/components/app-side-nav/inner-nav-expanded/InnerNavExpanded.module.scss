@@ -1,0 +1,71 @@
+@use '@pets/colors' as *;
+
+.inner-header-container {
+  display: flex;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  align-items: center;
+  .header-avatar {
+    font-size: 2.875rem;
+    margin-right: 0.625rem;
+  }
+  .header-content {
+    .header-content-user-info {
+      font-family: 'Titillium Web';
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.3125rem;
+    }
+    .header-content-user-role {
+      font-size: 0.875rem;
+      font-family: 'Roboto Bold', 'Roboto', sans-serif;
+    }
+  }
+}
+.inner-container {
+  .nav-item {
+    cursor: pointer;
+    display: flex;
+    margin-top: 1.25rem;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    margin-left: 3.5rem;
+
+    .nav-icon {
+      font-size: 1.6875rem;
+      margin-right: 0.6875rem;
+    }
+    .nav-label {
+      font-size: 1.125rem;
+    }
+    .selected-border {
+      background-color: $crimson;
+      height: 3rem;
+      width: 0.3125rem;
+      margin-right: 0.9375rem;
+      position: absolute;
+      left: 2.1875rem;
+    }
+  }
+  .nav-item:hover {
+    color: $sky-mist;
+  }
+}
+
+.header-action-btn {
+  color: $link-on-dark-background;
+  cursor: pointer;
+}
+
+.header-action-btn-help {
+  cursor: pointer;
+}
+
+.header-action-btn-help:hover {
+  color: $sky-mist;
+}
+.header-action-btn:hover {
+  color: $sky-mist;
+}

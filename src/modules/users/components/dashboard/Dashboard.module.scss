@@ -1,0 +1,23 @@
+@use '@pets/styles' as *;
+
+.container {
+  padding: 6rem 5rem;
+}
+[aria-disabled='true'] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+.buttonContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+
+.card {
+  @include card-with-box-shadow;
+  width: auto;
+  margin-top: 0;
+
+}

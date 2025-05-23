@@ -1,0 +1,58 @@
+@use './colors' as *;
+
+@mixin info-text {
+  color: $slate-grey;
+  font-weight: 400;
+  font-family: 'Roboto';
+}
+
+@mixin form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+  position: relative;
+}
+
+@mixin button-primary {
+  @include button;
+  background-color: $primary-blue;
+}
+
+@mixin button {
+  font-size: 1.0625rem;
+  cursor: pointer;
+  width: 8rem;
+  height: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+@mixin card {
+  width: 70%;
+  font-size: 1.125rem;
+  font-family: 'Roboto', sans-serif;
+  color: $grey;
+  margin: 2rem auto 5rem auto;
+  padding: 0.9rem 4rem 4rem 4rem;
+  border: 0.125rem solid $light-grey;
+}
+
+@mixin card-with-box-shadow {
+  @include card;
+  box-shadow: 1px 1px 5px 0px $light-grey;
+  border: none;
+}
+
+@mixin sub-header {
+  background-color: $poweder-blue;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1.5rem;
+}

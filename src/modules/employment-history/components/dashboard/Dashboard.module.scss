@@ -1,0 +1,56 @@
+@use '@pets/styles' as *;
+
+.container {
+    padding:2rem;
+}
+
+[aria-disabled='true'] {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+.buttonContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.card {
+    @include card-with-box-shadow;
+    width: auto;
+    margin-top: 0;
+    
+}
+.actionbuttons {
+    margin-top: 2rem;
+
+    & .submit {
+        margin-right: 1rem;
+    }
+
+    & .next:disabled {
+        @include button;
+        width: auto;
+        pointer-events: none;
+        background-color: $silver;
+    }
+
+    & .cancel {
+        @include button;
+        color: $light-gray;
+        margin-right: rem;
+        background-color: $pure-white !important;
+        border: 0.1rem solid $light-gray;
+    }
+}
+
+.gap {
+    background-color: red;
+    color: red;
+    margin: 10px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+}

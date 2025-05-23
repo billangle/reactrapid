@@ -1,0 +1,21 @@
+@use '@pets/colors' as *;
+
+.inner-header {
+  background-color: $frost-blue;
+  padding: 1.3rem 3.8125rem;
+  box-shadow: 0px 0.5px 4px 0.9px $light-grey;
+  h1 {
+    margin-bottom: 0;
+  }
+}
+
+.subtitle {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  line-height: 3rem;
+  font-size: 1.4rem;
+  span {
+    font-weight: 900;
+  }
+}

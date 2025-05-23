@@ -1,0 +1,19 @@
+@use '@pets/styles' as *;
+
+.modal-container {
+  border-radius: 0;
+  border-top: 0.625rem solid $crimson;
+
+  p {
+    font-size: 26px;
+    font-family: 'Titillium Web';
+  }
+
+  .modal-head {
+    font-family: 'Titillium Web';
+  }
+}
+
+.footer {
+  display: flex;
+}

@@ -1,0 +1,52 @@
+@use '@pets/styles' as *;
+
+.form-control {
+  @include form-control;
+  &.flex {
+    display: flex;
+  }
+  width: auto;
+
+  .label-container {
+    margin-bottom: 0.3rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
+
+.error {
+  border: 3px solid $crimson;
+}
+
+.divider {
+  position: absolute;
+  width: 4px;
+  height: inherit;
+  background-color: $crimson;
+  height: 100%;
+  left: -1rem;
+  top: 0;
+}
+
+.required {
+  display: inline-block;
+  color: $crimson;
+}
+
+input {
+  width: 100%;
+}
+
+.icon-input {
+  display: flex;
+  align-items: center;
+  &:not(.error) {
+    border: 1px solid;
+  }
+  width: fit-content;
+  input {
+    border: none;
+    outline: none;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../styles/helpers/colors";
+
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 23px);
+    .outlet-container {
+        padding-left: 7.5rem;
+        flex: 1;
+        min-height: 43.75rem;
+    }
+    
+    .outlet-push-right {
+        padding-left: 17.1875rem;;
+        min-height: 43.75rem;
+        flex: 1;
+    }
+}

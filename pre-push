@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run the ESLint
+echo "Running ESLint..."
+npm run eslint
+
+# Check the exit status of ESLint
+if [ $? -ne 0 ]; then
+  echo "ESLint failed. Please fix the errors and try again."
+  exit 1
+fi
+echo "ESLint has been passed"
+
+# Push the changes
+exit 0

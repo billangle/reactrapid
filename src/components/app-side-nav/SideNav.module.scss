@@ -1,0 +1,63 @@
+@use '@pets/colors' as *;
+
+.fullMinusHeader {
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  border-left: 5px solid $sidebar-left-border;
+  color: $secondary-white;
+  background-color: $sidebar-background;
+  z-index: 900;
+  height: 100vh;
+  box-shadow: 0px 0px 0.5rem $sidebar-background;
+}
+
+.expandNav {
+  animation-duration: 200ms;
+  animation-name: slidein;
+  width: 17.1875rem;
+}
+
+.collapseNav {
+  animation-duration: 200ms;
+  animation-name: slideout;
+  width: 6.3125rem;
+}
+
+.UsaBtn {
+  position: absolute;
+  right: 0.625rem;
+  top: 0.75rem;
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+  color: $pure-white;
+  text-decoration: none;
+}
+
+.UsaBtn:hover {
+  text-decoration: none;
+  color: $sky-mist;
+}
+
+.nav-content {
+  margin-top: 2.75rem;
+}
+
+@keyframes slidein {
+  0% {
+    width: 6.3125rem;
+  }
+  100% {
+    width: 17.1875rem;
+  }
+}
+
+@keyframes slideout {
+  0% {
+    width: 17.1875rem;
+  }
+  100% {
+    width: 6.3125rem;
+  }
+}

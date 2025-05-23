@@ -1,0 +1,33 @@
+@use '@pets/colors' as *;
+
+.inner-nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+  .nav-item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.25rem;
+    align-items: center;
+    color: $pure-white;
+    text-decoration: none;
+    .nav-icon {
+      font-size: 1.6875rem;
+    }
+    .nav-label {
+      text-align: center;
+      font-size: 0.75rem;
+      margin-bottom: 0.3125rem;
+    }
+    .selected-border {
+      background-color: $crimson;
+      width: 3rem;
+      height: 0.3125rem;
+    }
+  }
+  .nav-item:hover {
+    color: $sky-mist;
+  }
+}

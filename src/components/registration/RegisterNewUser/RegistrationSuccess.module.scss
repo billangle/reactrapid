@@ -1,0 +1,36 @@
+@import '../../../styles/helpers/mixins';
+@import '../../../styles/helpers/colors';
+
+.wrapper {
+  width: 70%;
+  margin: 4rem auto 10rem auto;
+  text-align: center;
+  line-height: 1.7rem;
+  & > p {
+    margin: 0;
+  }
+}
+
+.title {
+  font-size: 1.4rem;
+  font-family: 'Titillium Web';
+  font-weight: bold;
+}
+
+.info-text {
+  @include info-text;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.button {
+  @include button-primary;
+  align-self: flex-start;
+  width: fit-content;
+  background-color: $primary-blue;
+  text-transform: none;
+  margin: 2rem auto;
+  &:hover {
+    background-color: $midnight-blue-hover;
+  }
+}

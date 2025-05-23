@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>RAPID CC</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ffffff"> 
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      (function (n, i, v, r, s, c, u, x, z) {
+          x = window.AwsRumClient = {
+              q: [],
+              n: n,
+              i: i,
+              v: v,
+              r: r,
+              c: c,
+              u: u
+          };
+          window[n] = function (c, p) {
+              x.q.push({ c: c, p: p });
+          };
+          z = document.createElement('script');
+          z.async = true;
+          z.src = s;
+          document.head.insertBefore(
+              z,
+              document.getElementsByTagName('script')[0]
+          );
+      })(
+          'cwr',
+          'be24db5c-0d57-46f8-a1c0-26f18adbc535',
+          '1.0.0',
+          'us-east-2',
+          'https://client.rum.us-east-1.amazonaws.com/1.x/cwr.js',
+          {
+              sessionSampleRate: 1,
+              identityPoolId:'us-east-2:5bf50e50-27c8-43f8-8dd2-fa275ab1dab6',
+              endpoint: 'https://dataplane.rum.us-east-2.amazonaws.com',
+              telemetries: ['errors', 'http', 'performance'],
+              allowCookies: true
+          }
+      );
+   </script>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      window.global = window;
+      window.process = {
+        env: { DEBUG: undefined },
+      }
+      var exports = {};
+    </script>
+  </body>
+</html>

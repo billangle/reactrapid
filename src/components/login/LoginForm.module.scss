@@ -1,0 +1,113 @@
+@use '@pets/styles' as *;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content {
+  width: auto;
+  padding: 3rem 0;
+}
+
+.card {
+  margin: auto;
+  transform: translateY(4rem);
+  border: 0.125rem solid $slate-grey;
+  width: fit-content;
+  margin-top: -2.9rem;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.86);
+  width: 33rem;
+  height: 32rem;
+  justify-content: center;
+  padding: 2rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    label {
+      @include info-text;
+      font-size: 0.9rem;
+      color: $dark-slate;
+      margin-bottom: 0.3rem;
+    }
+    .formControl {
+      width: 60%;
+      margin-bottom: 0 !important;
+      padding: 0 !important;
+      margin-bottom: auto;
+      input {
+        height: 2.5rem;
+      }
+      .form-control {
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+      }
+    }
+    button {
+      @include button-primary;
+      align-self: flex-start;
+
+      &:hover {
+        background-color: $midnight-blue-hover;
+      }
+    }
+    .info-text {
+      @include info-text;
+      font-size: 0.85rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.link-container {
+  display: flex;
+  margin-top: 1.5rem;
+  gap: 1.5rem;
+  .link-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: math-auto;
+    text-decoration: underline;
+    &:hover {
+      color: $midnight-blue-hover;
+      background-color: inherit;
+    }
+  }
+}
+
+.link {
+  cursor: pointer;
+  &.bold {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+.icon {
+  color: $midnight-blue;
+}
+
+.subtitle-container {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 1rem 0;
+  padding: 0.7rem;
+  background-color: $poweder-blue;
+  border-left: 0.5rem solid $primary-blue;
+  width: fit-content;
+
+  .info-text {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}

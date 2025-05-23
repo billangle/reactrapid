@@ -1,0 +1,26 @@
+@use '@pets/colors' as *;
+.subHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: $frost-blue;
+  padding: 1.25rem 0;
+  font-size: 1.25rem;
+  margin: 0.25rem 0;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: -10;
+  left: 50%;
+  transform: translateX(-50%);
+  .firmName {
+    font-weight: bolder;
+    margin-left: 15%;
+  }
+  .displayName {
+    font-weight: normal;
+  }
+  .lastDate {
+    font-weight: bolder;
+    margin-right: 0.4rem;
+  }
+}

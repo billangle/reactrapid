@@ -1,0 +1,23 @@
+@use '@pets/colors' as *;
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 9999;
+  display: none;
+  color: $crimson;
+  background-color: $dark-champagne;
+  width: 165px;
+  height: 2.5rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.3125rem;
+}
+
+.scroll-to-top-button.visible {
+  display: block;
+}

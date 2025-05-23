@@ -1,0 +1,16 @@
+.to-top {
+    color: inherit;
+    margin-left: .6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    &:hover {
+        color: inherit;
+    }
+    &:active {
+        color: inherit;
+        border: none;
+        outline: none;
+    }
+}

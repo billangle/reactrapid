@@ -1,0 +1,38 @@
+@import 'src/styles/helpers/_colors.scss';
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content {
+  width: auto;
+  padding: 3rem 0;
+}
+
+.card {
+  margin: auto;
+  transform: translateY(4rem);
+  border: 0.125rem solid $slate-grey;
+  width: fit-content;
+  margin-top: -2.9rem;
+}
+.center-image  {
+  height: 20rem;
+  width: 55rem;
+  margin:auto;
+
+}
+.margin-auto {
+  margin:auto;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.86);
+  width: 60rem;
+  height: 32rem;
+  justify-content: center;
+  padding: 2rem;
+}

@@ -1,0 +1,52 @@
+@use '@pets/styles' as *;
+
+.container {
+  padding: 2rem 0;
+  height: 100%;
+  position: relative;
+  &.logged-in {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .text-container {
+    width: 78%;
+    margin: auto;
+    position: absolute;
+    bottom: -10;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .info-text {
+    @include info-text;
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.side-logo-container {
+  height: 100%;
+  padding-left: 3.813rem;
+  padding-right: 3.813rem;
+  display: flex;
+
+  .text-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 26px;
+
+    h1 {
+      margin: 0;
+      margin-bottom: 12px;
+      font-size: 2.25rem;
+    }
+    div {
+      margin-left: -5px;
+    }
+  }
+  .logo-container {
+    display: flex;
+  }
+}
