@@ -1,4 +1,4 @@
-<img width="100%" valign="bottom" src="https://github.com/REI-Systems/REISystems-OGST-USCIS-RAPID-Coding-Challenge-Document-Library/raw/main/assets/bannerUI.png"/>
+
 
 This repo consists of all the artifacts related to the **ReactJS**-based application which utilizes **Redux Toolkit** to manage state and provide middleware functionality. It is utilizing **Vite** to build/package the application and utilizes **SCSS** for CSS application styling. The left navigation component provides users access to modules. The initial implementation has two modules; users and reports, as an example.
 
