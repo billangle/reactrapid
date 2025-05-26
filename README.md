@@ -81,7 +81,7 @@ The implemention of the environments is defined in package.json.
 
 ## Testing
 
-Unit testing will be implemented utilizing Jest.
+Unit testing will be implemented utilizing Vi Test.
 
 ## UI Mockup - Storybook
 
