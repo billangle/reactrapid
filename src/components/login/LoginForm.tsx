@@ -21,9 +21,18 @@ import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 const topTitle = <h1>Right Angle Research</h1>;
 
 const informationText = (
+  <div>
   <h3>
-Right Angle Research
+ Site Information
   </h3>
+  <div>
+    The <a href='https://github.com/billangle/rapidbe' target='blank'>rapidbe</a> repository outlines a backend service designed to manage users within AWS Cognito User Pools. It employs AWS CDK for infrastructure provisioning, deploying Lambda functions and REST endpoints through API Gateway. The project integrates GitHub Actions for CI/CD workflows and includes Swagger documentation for API endpoints.
+<p></p>
+The  <a href='https://github.com/billangle/reactrapid' target='blank'>reactrapid</a> repository contains a ReactJS-based frontend application that utilizes Redux Toolkit for state management and middleware functionality. Built with Vite and styled using SCSS, the application features a left navigation component granting access to modules. The initial implementation includes 'users' and 'reports' modules as examples.
+<p></p>
+Together, these repositories form a full-stack application framework, combining AWS-managed backend services with a modular React frontend. This setup facilitates rapid development and deployment of scalable web applications.
+  </div>
+  </div>
 );
 const LoginForm = () => {
   const [isLoading, setIsLoading] = useState(false);
