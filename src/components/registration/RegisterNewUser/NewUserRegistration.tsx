@@ -96,8 +96,8 @@ import {
     const navigate = useNavigate();
   
     const topTitleRegistration = (
-      <h1 style={{ fontSize: '2.525rem' }}>
-       RAPID CC User Registration
+      <h1 style={{ fontSize: '1.45rem' }}>
+       Right Angle Research Registration
       </h1>
     );
     const password = methods.watch('password');
