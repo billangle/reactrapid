@@ -42,5 +42,9 @@
   "hosted-zone:account=796973487247:domainName=stg.reirapid.net:region=us-east-1": {
     "Id": "/hostedzone/Z035981930R0L34N05HCD",
     "Name": "stg.reirapid.net."
+  },
+  "hosted-zone:account=685600652087:domainName=rapidright.net:region=us-east-1": {
+    "Id": "/hostedzone/Z057053733DMGSPF9YEXJ",
+    "Name": "rapidright.net."
   }
 }
