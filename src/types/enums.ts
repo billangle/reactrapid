@@ -20,8 +20,8 @@ export enum USER_STATUS {
 }
 
 export enum PAGE_TITLE {
-  dashboard = "RAPID CC",
-  login = "RAPID CC Log-In",
+  dashboard = "Right Angle Research",
+  login = "Right Angle Research Log-In",
   assignReviewer = "Assign Reviewers -RAPID CC",
   responsivenessReview = "Responsiveness Review -RAPID CC",
   editResponsivenessReview = "Edit Responsiveness Review -RAPID CC",

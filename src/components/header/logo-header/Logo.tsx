@@ -13,8 +13,8 @@ function Logo({ height = '70px', width = '200px', titlelogo = '' }: Props) {
     <img
       style={{ height, width, cursor: 'pointer' }}
       src={USCIS_LOGO_URL}
-      alt="USCIS logo. Links to Home Page."
-      title="USCIS logo. Links to Home Page."
+      alt="Logo"
+      title="Logo"
     />
   );
 }

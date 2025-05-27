@@ -17,7 +17,7 @@ function Dashboard() {
 
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(setPageTitle('RAPID CC Report Dashboard'));
+    dispatch(setPageTitle('Right Angle Research Report Dashboard'));
   }, []);
   
   //const messages = useAppSelector((state) => state.app.messages);

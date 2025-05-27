@@ -18,11 +18,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 
 
-const topTitle = <h1>RAPID CC</h1>;
+const topTitle = <h1>Right Angle Research</h1>;
 
 const informationText = (
   <h3>
-  RAPID CC
+Right Angle Research
   </h3>
 );
 const LoginForm = () => {
@@ -102,7 +102,7 @@ const LoginForm = () => {
               <h2
                 style={{ margin: 0, fontSize: '1.25rem', paddingTop: '1rem' }}
               >
-              RAPID CC Login
+              Right Angle Research Login
               </h2>
 
               {loginError !== '' && (

@@ -2,10 +2,8 @@
 import { Navigate, Outlet, Route, Routes } from "react-router-dom";
 import LoginForm from "./components/login/LoginForm";
 import { CheckLoggedInLocalStorage } from "./utils/auth";
-import LoginLegalNotices from "./components/login-legal-notices/LoginLegalNotices";
 import ScrollToTop from "./utils/ScrollToTop";
 import { useAppSelector } from "./_store/hooks";
-import { GovBanner } from "@trussworks/react-uswds";
 import ReportRoutes from "./modules/reports/routes/ReportRoutes";
 import InactiveLoggedOut from "./components/inactive-logged-out/InactiveLoggedOut";
 import UnauthorizedAppLayout from "./components/unauthorized-app-layout/UnauthorizedAppLayout";
@@ -54,7 +52,7 @@ const PublicRoutes = () => {
 const AppRoutes = () => {
   return (
     <>
-      <GovBanner />
+
 
       <ScrollToTop />
       <Routes>

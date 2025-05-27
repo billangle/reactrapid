@@ -6,4 +6,4 @@ export const BLACK_ISOTOP = `${config.IMAGE_BASE_URL}/black-isotope-login.png`;
 export const WHITE_ISOTOP_LG = `${config.IMAGE_BASE_URL}/prosams-logged-in-banner-lg.png`;
 export const SUCCESS_REGISTRATION = `${config.IMAGE_BASE_URL}/registration-completed.svg`;
 export const UP_CAROT = `${config.IMAGE_BASE_URL}/upcarot.svg`;
-export const USCIS_LOGO_URL=`${config.IMAGE_BASE_URL}/uscis-logo.png`;
+export const USCIS_LOGO_URL=`${config.IMAGE_BASE_URL}/logo.png`;

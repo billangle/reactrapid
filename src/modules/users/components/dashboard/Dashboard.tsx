@@ -18,7 +18,7 @@ const defaultValues: Partial<User> = {};
 function Dashboard() {
   const dispatch = useAppDispatch();
   useEffect(() => {
-    dispatch(setPageTitle("RAPID CC User Dashboard"));
+    dispatch(setPageTitle("Right Angle Research User Dashboard"));
   }, []);
 
   //const messages = useAppSelector((state) => state.app.messages);
