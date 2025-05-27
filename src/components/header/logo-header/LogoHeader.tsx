@@ -35,7 +35,7 @@ function LogoHeader(props: Props) {
       style={{ cursor: 'pointer' }}
     >
       <div className={classes.info}>
-        <Logo width={props.isLoggedIn ? '250px' : ''} titlelogo="header" />
+        <Logo width={props.isLoggedIn ? '200px' : ''} titlelogo="header" />
         <div>
           <h3 style={{ marginBottom: '5px' }}></h3>
         </div>

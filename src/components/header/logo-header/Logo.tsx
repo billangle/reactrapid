@@ -7,7 +7,7 @@ type Props = {
   titlelogo?: string;
 };
 
-function Logo({ height = '70px', width = '200px', titlelogo = '' }: Props) {
+function Logo({ height = '200px', width = '200px', titlelogo = '' }: Props) {
   const navigate = useNavigate();
   return (
     <img
