@@ -349,7 +349,7 @@ import {
     return (
       <>
         <Helmet>
-          <title>Registration - RAPID CC</title>
+          <title>Registration -Right Angle Research</title>
         </Helmet>
         <Background
           backgroundColor={HEADER_BACKGROUND.WhiteIsotope}
@@ -536,7 +536,7 @@ import {
                       type="email"
                       validations={{
                         required: 'Enter your Email Address.',
-                        validate: (val: string) => validateEmailMatch(val),
+                        validate: (val: string) => validateConfirmEmailMatch(val),
                         pattern: {
                           value: EMAIL_REGEX,
                           message: 'Enter a valid e-mail address.',

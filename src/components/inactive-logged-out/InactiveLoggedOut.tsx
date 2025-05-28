@@ -9,14 +9,14 @@ import Card from '../../ui/card/Card';
 import { USCIS_LOGO_URL } from '@/assets/image-urls';
 import Header from '../header/Header';
 
-const topTitle = <h1>RAPID CC</h1>;
+const topTitle = <h1>Right Angle Research</h1>;
 //@todo convert this into dynamic error handling page with path parameters
 const InactiveLoggedOut = () => {
   const navigate = useNavigate();
   return (
     <>
       <Helmet>
-        <title>Logged out - RAPID CC</title>
+        <title>Logged out - Right Angle Research</title>
       </Helmet>
       <Background
         backgroundColor={HEADER_BACKGROUND.WhiteIsotope}
@@ -38,7 +38,7 @@ const InactiveLoggedOut = () => {
           </h1>
           <img
             src={USCIS_LOGO_URL}
-            alt="USCIS logo"
+            alt="logo"
             className={classes['center-image']}
           />
           <p className={classes['margin-auto']}>

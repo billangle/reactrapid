@@ -22,11 +22,11 @@ export enum USER_STATUS {
 export enum PAGE_TITLE {
   dashboard = "Right Angle Research",
   login = "Right Angle Research Log-In",
-  assignReviewer = "Assign Reviewers -RAPID CC",
-  responsivenessReview = "Responsiveness Review -RAPID CC",
-  editResponsivenessReview = "Edit Responsiveness Review -RAPID CC",
-  signSelfCertification = "Self-Certification Form -RAPID CC",
-  abstracts = "Abstracts -RAPID CC",
+  assignReviewer = "Assign Reviewers -Right Angle Research",
+  responsivenessReview = "Responsiveness Review -Right Angle Research",
+  editResponsivenessReview = "Edit Responsiveness Review -Right Angle Research",
+  signSelfCertification = "Self-Certification Form -Right Angle Research",
+  abstracts = "Abstracts -Right Angle Research",
   subtopicRanking = "Subtopic Rank and Rec",
   topicRanking = "Topic/CTC Rank and Rec",
   qualityCheck = "Quality Check",
@@ -35,20 +35,20 @@ export enum PAGE_TITLE {
 }
 
 export enum CONTRACT_PAGE_TITLE {
-  dashboard = "My Contracts -RAPID CC",
-  contractDetails = "Contract Details -RAPID CC",
-  responsibilityForms = "Responsibility Forms -RAPID CC",
-  awardInformation = "Award Information -RAPID CC",
-  deliverables = "Deliverables -RAPID CC",
+  dashboard = "My Contracts -Right Angle Research",
+  contractDetails = "Contract Details -Right Angle Research",
+  responsibilityForms = "Responsibility Forms -Right Angle Research",
+  awardInformation = "Award Information -Right Angle Research",
+  deliverables = "Deliverables -Right Angle Research",
   deliverableListing = "Deliverables",
   deliverableInvoice = "Deliverable - Invoice",
   deliverablePrototype = "Deliverable - Prototype",
   acceptedDeliverable = "Accepted Deliverable - ",
   returnedDeliverable = "Returned Deliverable - ",
   acceptOrReturnDeliverable = "Accept or Return Deliverable - ",
-  completeNegotiation = "Complete Negotiation -RAPID CC",
-  negotiationCompleted = "Negotiation Completed -RAPID CC",
-  negotiatedContractDetails = "Negotiated Contract Details -RAPID CC",
+  completeNegotiation = "Complete Negotiation -Right Angle Research",
+  negotiationCompleted = "Negotiation Completed -Right Angle Research",
+  negotiatedContractDetails = "Negotiated Contract Details -Right Angle Research",
 }
 
 export enum MODULE {

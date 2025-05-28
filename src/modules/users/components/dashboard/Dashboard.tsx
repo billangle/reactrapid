@@ -57,7 +57,7 @@ function Dashboard() {
     <>
       <HelmetProvider>
         <Helmet>
-          <title>RAPID CC User Dashboard</title>
+          <title>Rght Angle Research User Dashboard</title>
         </Helmet>
       </HelmetProvider>
       <Card customClass={classes.card}>

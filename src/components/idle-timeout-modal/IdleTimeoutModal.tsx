@@ -73,7 +73,7 @@ export const IdleTimeoutModal = () => {
           Are you still here?
         </ModalHeading>
         <p>
-          RAPID CC has been idle for more than
+          Right Angle Research has been idle for more than
           {Math.ceil(
             (import.meta.env.VITE_IDLE_TIMEOUT_SEC -
               import.meta.env.VITE_PROMPT_BEFORE_IDLE_TIMEOUT_SEC) /
