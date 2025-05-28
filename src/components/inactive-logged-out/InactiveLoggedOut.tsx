@@ -39,7 +39,7 @@ const InactiveLoggedOut = () => {
           <img
             src={USCIS_LOGO_URL}
             alt="logo"
-            className={classes['center-image']}
+          //  className={classes['center-image']}
           />
           <p className={classes['margin-auto']}>
             Please log back in to continue working. Any previously unsaved work
