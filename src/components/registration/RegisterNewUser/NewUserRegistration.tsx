@@ -536,7 +536,7 @@ import {
                       type="email"
                       validations={{
                         required: 'Enter your Email Address.',
-                        validate: (val: string) => validateConfirmEmailMatch(val),
+                        validate: (val: string) => validateEmailMatch(val),
                         pattern: {
                           value: EMAIL_REGEX,
                           message: 'Enter a valid e-mail address.',
