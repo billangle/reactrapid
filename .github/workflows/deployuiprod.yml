@@ -1,0 +1,47 @@
+name: Deploy React to PRODUCTION
+
+on:
+  workflow_dispatch
+
+
+
+jobs:
+  deployproduction:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Node.js environment
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '22' # Use the appropriate Node.js version
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Build the React app
+      - name: Build the React app
+        run: npm run build:prod
+
+      # Step 5: Configure AWS CLI
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_PRD_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_PRD_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.AWS_REGION }}
+
+      # Step 6: Deploy React to S3
+      - name: Deploy REACT to S3
+        run: |
+          aws s3 sync ./dist/ s3://${{ secrets.S3_PRD_BUCKET_NAME }} 
+
+      # Step 7: Deploy images to S3
+      - name: Deploy Images to S3
+        run: |
+          aws s3 sync ./images/ s3://${{ secrets.S3_PRD_IMAGES_BUCKET_NAME }} 
