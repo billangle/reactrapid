@@ -67,7 +67,7 @@ export function submitNewUser(
         );
       } else if (error.response?.data?.error === 'email already exists') {
         setRegistrationError(
-          'This email is already associated with an account. To retrieve the password, contact the Help Desk at agency-sbir@mail.nasa.gov.',
+          'This email is already associated with an account. ',
         );
       }
     });
